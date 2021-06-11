@@ -7,6 +7,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      outline: {
+          white: '2px solid white',
+        },
       colors: {
         amazon_blue: {
           light: "#232F3E",
@@ -18,5 +21,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [require("@tailwindcss/line-clamp"), require('tailwind-scrollbar-hide')],
 };
