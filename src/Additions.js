@@ -16,6 +16,7 @@ ADDITIONS:
     Footer.
     'Hello Select Address' part of header.
     Hiding Scrollbars*
+    Added Live Search.
 
 TODO:
     Country picker in header.

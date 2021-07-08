@@ -1,9 +1,39 @@
 import Image from "next/image";
 import {MenuIcon, SearchIcon, ShoppingCartIcon,LocationMarkerIcon} from "@heroicons/react/outline";
 import {PlayIcon,ChevronDownIcon} from "@heroicons/react/solid";
+import {useState, useEffect} from "react";
+import { addTerm, selectTerm } from "../slices/termSlice";
+import {useSelector, useDispatch} from "react-redux";
+import {useRouter} from "next/router";
+
 
 function Header() {
     //https://www.npmjs.com/package/react-country-dropdown
+    const dispatch = useDispatch();
+    const selector = useSelector(selectTerm);
+    const [term, setTerm] = useState(selector);
+    const router = useRouter();
+    
+
+    useEffect(() => {
+        dispatch(addTerm(term))
+        //setTerm(selector)
+    }, [term])
+
+    const submitSearch = (e) => {
+        e.preventDefault();
+        if (term === "") {
+            router.push('/')
+        }
+        else {
+            dispatch(addTerm(term));
+            router.push(`/results/${term}`);
+            setTerm(selector);
+            console.log(selector);
+        }
+        
+    }
+
     return (
         <header className="header" style={{ position: 'sticky', top: 0, zIndex: 50 }}>
             <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
@@ -17,6 +47,7 @@ function Header() {
                         width={150}
                         height={40}
                         objectFit="contain"
+                        onClick={() => router.push('/')}
                     />
                     <LocationMarkerIcon className="text-white h-6"/>
                     <div className="flex flex-col hover:outline-white px-3 mx-2">
@@ -26,15 +57,18 @@ function Header() {
                     
                 </div>
 
-                <div className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500">
+                <form onSubmit={submitSearch} className="hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hover:bg-yellow-500">
                     
                     <input
                         className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md outline-none focus:outline-none px-4"
                         type="text"
+                        value={term}
+                        onChange={(e) => setTerm(e.target.value)}
+            
                     />
 
-                    <SearchIcon className="h-12 p-4 "/>
-                </div>
+                    <SearchIcon onClick={submitSearch} className="h-12 p-4 "/>
+                </form>
 
                 <div className="flex items-center text-xs space-x-6 mx-6  text-white whitespace-nowrap ">
                     <div className="link hover:outline-white px-3 mx-2">
