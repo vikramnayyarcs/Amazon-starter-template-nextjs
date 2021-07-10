@@ -5,6 +5,8 @@ import {useState, useEffect} from "react";
 import { addTerm, selectTerm } from "../slices/termSlice";
 import {useSelector, useDispatch} from "react-redux";
 import {useRouter} from "next/router";
+import {signIn, signOut, useSession} from "next-auth/client";
+import { selectItems } from "../slices/basketSlice";
 
 
 function Header() {
@@ -13,6 +15,11 @@ function Header() {
     const selector = useSelector(selectTerm);
     const [term, setTerm] = useState(selector);
     const router = useRouter();
+    const [session] = useSession();
+    const items = useSelector(selectItems);
+
+    console.log(items)
+    
     
 
     useEffect(() => {
@@ -71,9 +78,15 @@ function Header() {
                 </form>
 
                 <div className="flex items-center text-xs space-x-6 mx-6  text-white whitespace-nowrap ">
-                    <div className="link hover:outline-white px-3 mx-2">
-                        <p>Hello USER</p>
-                        <p className="font-extrabold md:text-sm">Account & Lists</p>
+                    <div onClick={!session ? signIn : signOut} className="link hover:outline-white px-3 mx-2">
+                        <p>Hello {session ? session.user.name : "USER"}</p>
+
+                        <div className="flex">
+                            <p className="font-extrabold md:text-sm">Account & Lists</p>
+                            <ChevronDownIcon className="h-6 pt-3 pl--4 cursor-pointer "/>
+                        </div>
+                        
+                        
                     </div>
 
                     <div className="link hover:outline-white px-3 mx-2">
@@ -81,8 +94,8 @@ function Header() {
                         <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>
 
-                    <div className="relative link flex items-center hover:outline-white px-3 mx-2">
-                        <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">0</span>
+                    <div onClick={() => router.push("/checkout")} className="relative link flex items-center hover:outline-white px-3 mx-2">
+                        <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">{items.length}</span>
                         <ShoppingCartIcon className="h-10"/>
                         <p className="hidden md:inline font-extrabold md:text-sm">Basket</p>
                     </div>
