@@ -7,7 +7,7 @@ ADDITIONS:
         Added EmulateTouch (Swiping Functionality) to the Banner.
         Added preventMovementUntilSwipeScrollTolerance.
         Added stopOnHover.
-        Added useKeyboardArrows for Desktop/Laptop users.
+        Added useKeyboardArrows for Desktop/Laptop users.   
         
     Experimented with the layout of products.
     Added the Personal Footer.
@@ -17,16 +17,18 @@ ADDITIONS:
     'Hello Select Address' part of header.
     Hiding Scrollbars*
     Added Live Search.
+    Live search which when submitted, renders the results (Works on Results Page)
+    Hide products as search changes? / Render results from search.
 
 TODO:
-    Country picker in header.
+    Country picker in header. 
     Use API more (pull in data from database; e.g. for rating; different category pages using API.).
-    Increase the number of Auth Providers.
+    Increase the number of Auth Providers. (Day 2)
     Admin Panel to add products.
-    Comment Section.
+    Comment Section underneath individual product page.
     Pull in the user's location to convert the currency.
-    Dropdown for where the user logs out.
-    Live search which when submitted, renders the results.
+    Dropdown for where the user logs out. (Day 2)
+    
     Individual product pages.
     Basket Which Groups the same product and increments quantity.
     Basket Temporarily Persists after refresh.
@@ -35,7 +37,7 @@ TODO:
     Sidebar.
     Modal for 'Hello Sign In Parts'.
     PayPal?
-    DarkMode (Tailwind)
-    Hide products as search changes? / Render results from search.
+    DarkMode (Tailwind, at the end.)
+    
 
 */
