@@ -19,6 +19,10 @@ export default NextAuth({
       clientSecret: process.env.TWITCH_SECRET
     }),
 
+    Providers.GitHub({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET
+    })
     
   ],
 
