@@ -19,11 +19,12 @@ ADDITIONS:
     Added Live Search.
     Live search which when submitted, renders the results (Works on Results Page)
     Hide products as search changes? / Render results from search.
+    Increase the number of Auth Providers. (Day 2)
 
 TODO:
     Country picker in header. 
     Use API more (pull in data from database; e.g. for rating; different category pages using API.).
-    Increase the number of Auth Providers. (Day 2)
+    
     Admin Panel to add products.
     Comment Section underneath individual product page.
     Pull in the user's location to convert the currency.
