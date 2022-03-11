@@ -78,8 +78,8 @@ function Header() {
                 </form>
 
                 
-                <div onClick={!session ? signIn : signOut} className="flex items-center text-xs space-x-6 mx-6  text-white whitespace-nowrap ">
-                    <div  className="link hover:outline-white px-3 mx-2">
+                <div className="flex items-center text-xs space-x-6 mx-6  text-white whitespace-nowrap ">
+                    <div onClick={!session ? signIn : signOut}  className="link hover:outline-white px-3 mx-2">
                         <p>Hello {session ? session.user.name : "USER"}</p>
 
                         <div className="flex">
