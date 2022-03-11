@@ -6,16 +6,16 @@ export default async (req, res) => {
     //console.log(email);
 
     const transformedItems = items.map(item => ({
+        description: item.description,
+        quantity: 1,
+
         price_data: {
-            description: item.description,
-            quantity: 1,
             currency: 'gbp',
-            unit_amount: item_price*100,
+            unit_amount: item.price*100,
             product_data: {
-                name: item_title,
+                name: item.title,
                 images: [item.image]
             },
-
         }
     }));
 
@@ -34,4 +34,6 @@ export default async (req, res) => {
             images: JSON.stringify(items.map(item => item.image))
         }
     })
+
+    res.status(200).json({id: session.id}) //All went well.
 }
