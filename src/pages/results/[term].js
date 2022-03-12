@@ -3,7 +3,7 @@ import Header from '../../components/Header'
 import SearchHeader from '../../components/SearchHeader'
 import {useSelector, useDispatch} from "react-redux";
 import {useRouter} from "next/router";
-import Head from "next/Head";
+import Head from "next/head";
 import { selectProducts } from '../../slices/productsSlice';
 import SearchResult from '../../components/SearchResult';
 import { selectTerm } from '../../slices/termSlice';
