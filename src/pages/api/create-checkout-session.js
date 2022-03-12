@@ -1,3 +1,17 @@
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * Creating an API which creates the checkout session asynchronously.
+ * 
+ * We then 'transform' the items into a format that Stripe can work with (making it easy to pass the items to them and then they 
+ * create the checkout page).
+ * 
+ * Creates the checkout session, using the 'transformed' items.
+ * 
+ * Finally returns 200 if ok or 400 if there's an error.
+ * 
+ */
+
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 export default async (req, res) => {
