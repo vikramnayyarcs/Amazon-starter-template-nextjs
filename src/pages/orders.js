@@ -22,7 +22,7 @@ function Orders({orders}) {
             session ? (
                 <h2>{orders.length} Order(s)</h2>
             ) : (
-                <h2>Please Sign in TO See YOur Orders</h2>
+                <h2>Please Sign in To See Your Orders</h2>
             )
             }
 
