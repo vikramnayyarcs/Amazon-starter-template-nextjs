@@ -79,11 +79,7 @@ function Header() {
 
                 
                 <div className="flex items-center text-xs space-x-6 mx-6  text-white whitespace-nowrap ">
-<<<<<<< HEAD
                     <div onClick={!session ? signIn : signOut} className="link hover:outline-white px-3 mx-2">
-=======
-                    <div onClick={!session ? signIn : signOut}  className="link hover:outline-white px-3 mx-2">
->>>>>>> c8102021d53f50cbef85ffabe0c437553321dc95
                         <p>Hello {session ? session.user.name : "USER"}</p>
 
                         <div className="flex">

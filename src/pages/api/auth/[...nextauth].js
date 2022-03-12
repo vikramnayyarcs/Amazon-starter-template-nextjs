@@ -8,10 +8,6 @@ export default NextAuth({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET
     }),
-<<<<<<< HEAD
-=======
-
->>>>>>> c8102021d53f50cbef85ffabe0c437553321dc95
     /*
     Providers.Facebook({
       clientId: process.env.FACEBOOK_ID,
@@ -38,10 +34,6 @@ export default NextAuth({
       clientSecret: process.env.SPOTIFY_SECRET
     })
     */
-<<<<<<< HEAD
-=======
-    
->>>>>>> c8102021d53f50cbef85ffabe0c437553321dc95
   ],
 
 
