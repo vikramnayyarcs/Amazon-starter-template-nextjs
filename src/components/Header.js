@@ -18,7 +18,7 @@ function Header() {
     const [session] = useSession();
     const items = useSelector(selectItems);
 
-    console.log(items)
+    //console.log(items)
     
     
 
@@ -90,7 +90,7 @@ function Header() {
                         
                     </div>
 
-                    <div className="link hover:outline-white px-3 mx-2">
+                    <div onClick={() => router.push("/orders")} className="link hover:outline-white px-3 mx-2">
                         <p>Returns</p>
                         <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>

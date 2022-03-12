@@ -11,6 +11,7 @@ import Sidebar from "../components/Sidebar";
 import { addProducts} from "../slices/productsSlice";
 import {useSelector, useDispatch} from "react-redux";
 import {useEffect} from "react";
+import { getSession } from "next-auth/client";
 
 
 export default function Home({products}) {
@@ -47,12 +48,14 @@ export default function Home({products}) {
 }
 
 export async function getServerSideProps(context) {
+  const session = await getSession(context);
   const products = await fetch("https://fakestoreapi.com/products").then(res => res.json());
 
   
   return {
     props: {
-      products
+      products,
+      session
     }
   }
 }

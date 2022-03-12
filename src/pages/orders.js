@@ -4,12 +4,13 @@ import db from '../../firebase';
 import Header from '../components/Header'
 import order from '../components/Order'
 import moment from 'moment'
+import Order from '../components/Order';
 
 function Orders({orders}) {
     //https://youtu.be/4E0WOUYF-QI?t=7782
     const [session] = useSession();
 
-    //console.log(orders);
+    console.log(orders);
 
   return (
     <div >
@@ -19,11 +20,25 @@ function Orders({orders}) {
         
             {
             session ? (
-                <h2>x Orders</h2>
+                <h2>{orders.length} Order(s)</h2>
             ) : (
                 <h2>Please Sign in TO See YOur Orders</h2>
             )
             }
+
+            <div className="mt-5 space-y-4">
+                {orders?.map(({id,amount, amount_shipping, items, timestamp, images}) => (
+                    <Order
+                        id={id}
+                        key={id}
+                        amount={amount}
+                        amount_shipping={amount_shipping}
+                        items={items}
+                        timestamp={timestamp}
+                        images={images}
+                    />
+                ))}
+            </div>
         </main>
     </div>
   )
