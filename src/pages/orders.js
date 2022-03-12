@@ -21,7 +21,7 @@ function Orders({orders}) {
             session ? (
                 <h2>x Orders</h2>
             ) : (
-                <h2>Please Sign in TO See YOur ORders</h2>
+                <h2>Please Sign in TO See YOur Orders</h2>
             )
             }
         </main>
@@ -35,7 +35,7 @@ export async function getServerSideProps(context) {
     const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
     //Get the credentials of the logged in user.
-    const session = getSession(context);
+    const session = await getSession(context);
 
     if (!session) {
         return { 
@@ -52,7 +52,7 @@ export async function getServerSideProps(context) {
         amount: order.data().amount,
         amount_shipping: order.data().amount_shipping,
         images: order.data().images,
-        timestamp: moment(order.data().timestamp.toDate().unix()), //Convert to UNIX to avoid losing Timestamp, then back to date.
+        timestamp: moment(order.data().timestamp.toDate()).unix(), //Convert to UNIX to avoid losing Timestamp, then back to date.
         items: (
             //Fetch and access data.
             //Go into Session and get the items that come back.
