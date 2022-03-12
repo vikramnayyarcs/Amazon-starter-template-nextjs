@@ -1,3 +1,9 @@
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Banner containing a series of links (they don't work!) to give a similar frontend to Amazon's.
+ */
+
 function Copyright() {
     return (
         <div className="flex px-15 bg-[#181c24] pt-5 justify-evenly pb-10">

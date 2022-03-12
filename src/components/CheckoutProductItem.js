@@ -4,6 +4,20 @@ import Currency from "react-currency-formatter";
 import {useDispatch} from "react-redux";
 import {addToBasket, removeFromBasket} from "../slices/basketSlice";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * The purpose of this component is to return a 'CheckoutProductItem' which differs in relation to a typical product.
+ * because it has the 'addItemToBasket' and 'removeItemFromBasket' functionality.
+ * 
+ * We make use of Redux to send/'dispatch' an item into the store.
+ * 
+ * The ratings are random.
+ * 
+ * @param {*} - Props thar relate to the details of each 'CheckoutProductItem'.
+ * @returns  - JSX relating to a 'CheckoutProductItem' Component.
+ */
+
 function CheckoutProductItem({id,title,price,description,category,image,rating,hasPrime}) {
 
     const dispatch = useDispatch();

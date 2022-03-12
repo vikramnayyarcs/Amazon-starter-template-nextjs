@@ -1,5 +1,11 @@
 import Image from "next/image";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - Needs to render a horizontal product component.
+ */
+
 function SearchResult({id,title,price,description,category,image}) {
     return (
         <div className="flex items-center">

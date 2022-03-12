@@ -8,6 +8,11 @@ import {useRouter} from "next/router";
 import {signIn, signOut, useSession} from "next-auth/client";
 import { selectItems } from "../slices/basketSlice";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Header, providing the user with some options.
+ */
 
 function Header() {
     //https://www.npmjs.com/package/react-country-dropdown
@@ -21,12 +26,19 @@ function Header() {
     //console.log(items)
     
     
-
+    /**
+     * Send the term to the store everytime it changes. 
+     */
     useEffect(() => {
         dispatch(addTerm(term))
         //setTerm(selector)
     }, [term])
 
+    /**
+     * Either go to the search results page or to the home page.
+     * 
+     * @param {*} e - Stop the refresh. 
+     */
     const submitSearch = (e) => {
         e.preventDefault();
         if (term === "") {
@@ -36,7 +48,7 @@ function Header() {
             dispatch(addTerm(term));
             router.push(`/results/${term}`);
             setTerm(selector);
-            console.log(selector);
+            //console.log(selector);
         }
         
     }

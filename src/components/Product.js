@@ -5,6 +5,18 @@ import Currency from 'react-currency-formatter';
 import {useDispatch} from 'react-redux';
 import {addToBasket} from "../slices/basketSlice";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * This component is used within ProductFeed.
+ * 
+ * We randomly assign ratings.
+ * 
+ * We 'dispatch' products into the Basket Slice.
+ * 
+ * @returns - JSX Component for each product.
+ */
+
 function Product({id,title,price,description,category,image}) {
     const MAX_RATING = 5;
     const MIN_RATING = 1;
@@ -43,6 +55,9 @@ function Product({id,title,price,description,category,image}) {
                 <Currency quantity={price} currency="GBP"/>
             </div>
 
+            {/**
+             * Additional prime logo if that applies.
+             */}
             {hasPrime && 
                 <div className="flex items-center space-x-2 -mt-5">
                     <img className="w-12 object-contain" src="https://links.papareact.com/fdw" alt="Prime Logo"/>

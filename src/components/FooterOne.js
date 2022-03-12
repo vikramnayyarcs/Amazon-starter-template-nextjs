@@ -1,6 +1,12 @@
 import {ChevronRightIcon} from "@heroicons/react/solid";
 import Image from "next/image";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Banner containing a series of information to give a similar frontend to Amazon's.
+ */
+
 function FooterOne() {
     return (
         <div className="bg-amazon_blue-light w-full">

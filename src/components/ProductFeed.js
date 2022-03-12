@@ -1,5 +1,11 @@
 import Product from "./Product";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Grid of Products, using the array of product components as a prop.
+ */
+
 
 function ProductFeed({products}) {
 
@@ -94,7 +100,7 @@ function ProductFeed({products}) {
             </div>
             
             <div className="ml-10 mr-10 grid md:col-span-4">
-                {/*ONLY RENDER PERSONAL IF THERE's NO USER */}
+                
                 
                 
             </div>

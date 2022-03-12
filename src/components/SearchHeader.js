@@ -1,3 +1,9 @@
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Additional Header, for styling purposes. 
+ */
+
 function SearchHeader() {
     return (
         <div

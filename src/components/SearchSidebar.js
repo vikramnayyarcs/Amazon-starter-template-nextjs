@@ -1,3 +1,9 @@
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Sidebar for styling purposes.
+ */
+
 function SearchSidebar() {
     return (
         <div>

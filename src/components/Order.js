@@ -3,6 +3,12 @@ import moment from 'moment';
 import Currency from 'react-currency-formatter';
 import Image from 'next/image';
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Order.
+ */
+
 function Order({id,amount, amount_shipping, items, timestamp, images}) {
   return (
     <div className="relative border rounded-md">

@@ -1,3 +1,9 @@
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Banner containing a series of information to give a similar frontend to Amazon's.
+ */
+
 function FinalFooter() {
     return (
         <div className="flex items-evenly  bg-[#181c24] pt-5"> 

@@ -1,6 +1,14 @@
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+/**
+ * @author - Vikram Nayyar
+ * 
+ * This component lazy loads images (only when needed) and presents a dynamic frontend to the customer.
+ * 
+ * @returns - JSX Carousel Banner of 3 different images.
+ */
+
 function Banner() {
     return (
         <div className="relative">

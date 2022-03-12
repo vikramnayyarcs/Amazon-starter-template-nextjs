@@ -1,6 +1,12 @@
 import React from 'react'
 import {UserCircleIcon} from "@heroicons/react/solid";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * @returns - JSX Additional Header, for styling purposes. 
+ */
+
 function Sidebar() {
     return (
         <div>
