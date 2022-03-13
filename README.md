@@ -42,6 +42,10 @@ Run commands
 
 ## How to Run
 
+Make sure you have your own set of ENV variables.
+
+Run both the frontend and the backend (ensure the Stripe Signing Secret that appears when running the Webhook Listener matches the one in your ENV file).
+
 FrontEnd:
 
 ```npm run dev```
@@ -49,3 +53,5 @@ FrontEnd:
 WebHook Listener:
 
 ``` stripe listen --forward-to localhost:3000/api/webhook ```
+
+When filling in the checkout screen, you may need to use to test card (keep typing 424242424242424242 until you can't type anymore characters in).
