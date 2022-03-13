@@ -1,8 +1,10 @@
-# Installation Steps
+# Next JS ECommerce CLONE
 
+ECommerce Store using Next JS, Stripe and FireBase.
 
+## Installation Steps
 
-## Using npm
+### Using npm
 
 Run commands
 
@@ -12,7 +14,7 @@ Run commands
 2) ```npm run dev```
 
 
-## Or using yarn
+### Or using yarn
 
 Run commands 
 
@@ -22,7 +24,12 @@ Run commands
 
 3) ```yarn run dev```
 
+## How to Run
 
-### If you see the window below then you are set to build AMAZON 2.0!
+FrontEnd:
 
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+```npm run dev```
+
+WebHook Listener:
+
+``` stripe listen --forward-to localhost:3000/api/webhook ```
