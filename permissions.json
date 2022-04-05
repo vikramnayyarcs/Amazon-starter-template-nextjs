@@ -1,12 +1,11 @@
 {
-  "type": "service_account",
-  "project_id": "nextecommerce-fbad9",
-  "private_key_id": "e4957fa29fb4cde2da793a130e7bfa0596d7a55c",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDmrpx/8l9SKzMu\nNXLFha4hrjHMtagc+DrJEHbCK46zJMmIPGD49BjWancTefmEvRimlkPZzQD6mnCZ\n4LVXCfeNOJRsVUScv/gOovXIiBd1h9O6+7tErQEA0YHzDQla1FhnPCSr2p3KV64P\nz+3gEpEYe4stnpiqabDYtMt+MvFbdwuGycMcR0bQEC5qKLvaiIdRtgKNzW+rQNvN\n2bMpdj8QS6cbkzuXtyVbbRFL7DudbV4EM/GGeQKTnzdinP4wb2fHGQI3slc7LB3d\n4xGAIzFqqKCZERrzIy1mVtJrjz0r9TK1No1BLiFcaZ6rbdhnXahE3UFI/mIZvKYB\n/+qD8rDzAgMBAAECggEAF6mQlxVDDtgsk1BbOgSo5H6MUC3QFUynJwm/zNIP/LNI\n0ucyoUbUp2XbWg2YeTO2bBwc0KIVOB+QblBc+ZUlpgBIRUaH17ZfWQ0BPjUrhtxM\nbTE2N+ixIibbeBV9wKnoeYpzToeJyQAudCPFiEcPSB4gHClZCp31zHzbJNJP7Kw7\nAd4C+wWQqTmwA94dW9Oj0kycLC0c6+q5Ip+zqjfLvHvhb2r9VDT9tyB27bnl2Awa\nOYiKTeqzjAbco3yALwhtseOI7Tn5Ar1Cz8RY7jigs/234T6nsU9nqxNxvbAUMcIT\nKQjBDDDqaXeU2TreIRPGzJMDB+iwA/Ku4dV1Cl8ZnQKBgQD/LaW7FYjHQJhq2nfg\nY2BkK7CSf6i+cSbA/tktv0NnI52tHGGfdt8Fn6TzVSLLua2ixF2nZxHX/V7MwnYI\nOP/juOUTYEWLmJZtGRw/mhPH5sj6iFzYyX0yYBShgPzkI25SegwXb0UvqnNCKwdK\nI3Z+cNnQL3zo1KKxwreWWegbxQKBgQDnbMVUW8vlVw516XFn1aLPULtVQRqdunLe\npXY3/8N1Q838nPKOqL5O1ddirI3uxyIQwVc4HKkzR54gsm0BJF3zqLVDaNxEzQ3G\n+AcX3ro1amtfgJ+Bs8iimdZj+lz2bbeQzxN0xlqOGT0L/H+jMWFQKZa8QXHJhUeL\nKW4cJ0tNVwKBgCzF6p1f0ub7G4MsH/p8FU6eJ9YclhQMMHuOe7a+J2pyYlkccLiV\nF96Zu0yCtJ9ATgoQIEqeGBBowXh16lXZAnUHXRJAQxOSS1qLHFzAgRYDFWJ4CKp0\n+AWdvCD2S+kPmmzYQ0TdXitV4fFLMXU9sa3PyTfxDR6hKIa+Ho4/6iztAoGBAJ1p\nJbugiMqg8WwQchu/e3NqJVHy64i3hmScxRGH/Uno6dZWZsHUU0XKPCuY1R3CAxDE\ngW/gRtJjd1IkKvKo6uLOMST90T1XAHUCxchdreihTxFxqo0NXX4EB4iPheX0cPSl\ndUVrmbKnxhc+Ew9MijV9ZFL+bMg2yJgGgSfTLmwXAoGBALI0UV51BuvSTxDhqSPL\naOnT0WT3UKbVHqxRcNF7i7wsGWvJiz2T8SoKonNX0cocYno1OjFSpnU+qoUbVwti\nCbYCvYLXtV1G8rvrOT2XdBkr1k1/Wjifaj9tL3EQGCDX/2abKvNnvG9Bos1h50Qd\ncPTjw1AHcQ+yfS5zJYNw0i2e\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-yurv7@nextecommerce-fbad9.iam.gserviceaccount.com",
-  "client_id": "107170419939161832109",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-yurv7%40nextecommerce-fbad9.iam.gserviceaccount.com"
+  "type": "UPDATE",
+  "project_id": "UPDATE",
+  "private_key_id": "UPDATE",
+  "private_key": "-----BEGIN PRIVATE KEY-----UPDATe",
+  "client_id": "UPDATE",
+  "auth_uri": "UPDATE",
+  "token_uri": "UPDATE",
+  "auth_provider_x509_cert_url": "UPDATE",
+  "client_x509_cert_url": "UPDATE"
 }
