@@ -7,7 +7,6 @@ import moment from 'moment'
 import Order from '../components/Order';
 
 function Orders({orders}) {
-    //https://youtu.be/4E0WOUYF-QI?t=7782
     const [session] = useSession();
 
     console.log(orders);

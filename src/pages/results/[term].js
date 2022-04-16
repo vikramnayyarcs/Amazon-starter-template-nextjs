@@ -9,6 +9,14 @@ import SearchResult from '../../components/SearchResult';
 import { selectTerm } from '../../slices/termSlice';
 import {useEffect} from "react";
 
+/**
+ * @Author - Vikram Nayyar
+ * 
+ * Live filtering of results, using a useEffect, custom function and Redux.
+ * 
+ * @returns - Filtered results on the search page, displayed as components.
+ */
+
 function Result() {
     const selectTheTerm = useSelector(selectTerm);
     const products = useSelector(selectProducts);
