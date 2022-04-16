@@ -1,8 +1,26 @@
-# Installation Steps
+# Next JS ECommerce CLONE
 
+ECommerce Store using Next JS, Stripe and FireBase.
 
+## Project Structure
 
-## Using npm
+app - Contains the REDUX store.
+
+components - Reusable JSX components for the application.
+
+pages - Different pages that make up the application.
+
+api - Build in as part of create-next-app. Also contains our authentication, webhook and create-checkout-session code.
+
+results - Search results.
+
+slices - REDUX slices.
+
+styles - Global styles used to setup Tailwind CSS.
+
+## Installation Steps
+
+### Using npm
 
 Run commands
 
@@ -12,7 +30,7 @@ Run commands
 2) ```npm run dev```
 
 
-## Or using yarn
+### Or using yarn
 
 Run commands 
 
@@ -22,7 +40,18 @@ Run commands
 
 3) ```yarn run dev```
 
+## How to Run
 
-### If you see the window below then you are set to build AMAZON 2.0!
+Make sure you have your own set of ENV variables.
 
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+Run both the frontend and the backend (ensure the Stripe Signing Secret that appears when running the Webhook Listener matches the one in your ENV file).
+
+FrontEnd:
+
+```npm run dev```
+
+WebHook Listener:
+
+``` stripe listen --forward-to localhost:3000/api/webhook ```
+
+When filling in the checkout screen, you may need to use to test card (keep typing 424242424242424242 until you can't type anymore characters in).
