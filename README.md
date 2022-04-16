@@ -42,6 +42,14 @@ Run commands
 
 ## How to Run
 
+### FireBase Admin
+
+Download 'permissions.json' using the following steps:
+FireBase
+Project Settings
+Generate New Project Key
+Rename JSON
+
 Make sure you have your own set of ENV variables.
 
 Run both the frontend and the backend (ensure the Stripe Signing Secret that appears when running the Webhook Listener matches the one in your ENV file).
